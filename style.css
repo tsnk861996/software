@@ -187,6 +187,10 @@ h3 {
     .row {
         flex-direction: column;
     }
+    .course video{
+        width: 280px;
+        height: 180px;
+    }
 }
 
 /*----- campus -----*/
