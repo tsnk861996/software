@@ -194,6 +194,12 @@ h3 {
     }
 }
 
+@media(max-width: 1000px){
+    .row {
+        flex-direction: column;
+    }
+}
+
 /*----- campus -----*/
 
 .campus {
