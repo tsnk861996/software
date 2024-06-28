@@ -79,13 +79,13 @@ nav img {
 
 @media(max-width: 700px){
     .text-box h2{
-        font-size: 23px;
+        font-size: 35px;
     }
     .text-box h5{
         font-size: 15px;
     }
     .text-box h6{
-        font-size: 17px;
+        font-size: 25px;
     }
 }
 
@@ -95,7 +95,7 @@ nav img {
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 0px;
 }
 
 .course-col img {
@@ -162,7 +162,7 @@ h3 {
 }
 
 .row {
-    margin-top: 5%;
+    margin-top: 0%;
     display: flex;
     justify-content: space-between;
 }
@@ -262,7 +262,6 @@ h3 {
     width: 90%;
     margin: auto;
     text-align: center;
-    padding-top: 100px;
 }
 
 .facilities-col {
