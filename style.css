@@ -188,7 +188,7 @@ h3 {
     .row {
         flex-direction: column;
     }
-    .course video{
+    .course iframe{
         width: 280px;
         height: 180px;
     }
