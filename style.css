@@ -204,7 +204,7 @@ h3 {
     }
 }
 
-.btn-142 {
+.btn-1 {
     --BG_color: #ffffff;
     --color: #000000;
     width: 140px;
@@ -227,7 +227,11 @@ h3 {
     align-items: center;
 }
 
-.btn-142 span {
+.btn-1:hover {
+    color: #0059ff;
+}
+
+.btn-1 span {
     display: flex;
     width: 100%;
     height: 100%;
@@ -239,8 +243,8 @@ h3 {
     border-radius: 7px;
 }
 
-.btn-142:before,
-.btn-142:after {
+.btn-1:before,
+.btn-1:after {
     content: '';
     position: absolute;
     left: -2px;
@@ -269,12 +273,12 @@ h3 {
     }
 }
 
-.btn-142:after {
+.btn-1:after {
     filter: blur(50px);
 }
 
 /*** disabled style ***/
-.btn-142:disabled {
+.btn-1:disabled {
     pointer-events: none;
     opacity: .65;
     color: #7e7e7e;
@@ -283,16 +287,10 @@ h3 {
     box-shadow: none;
 }
 
-.btn-142:disabled:before,
-.btn-142:disabled:after {
+.btn-1:disabled:before,
+.btn-1:disabled:after {
     background: #dcdcdc;
     animation: none;
-}
-
-/*** dark mode ***/
-html.dark-mode .btn-142 {
-    --BG_color: #000000;
-    --color: #ffffff;
 }
 
 /*----- campus -----*/
@@ -439,15 +437,6 @@ ul.slides {
     list-style: none;
 }
 
-.slides * {
-    user-select: none;
-    -ms-user-select: none;
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    -webkit-touch-callout: none;
-}
-
 ul.slides input {
     display: none;
 }
@@ -516,7 +505,7 @@ ul.slides input {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 20px;
+    bottom: 0.1px;
     z-index: 999;
     text-align: center;
 }
@@ -592,7 +581,7 @@ input:checked+.slide-container .nav label {
 }
 
 .wrapper .icon span i {
-    font-size: 22px;
+    font-size: 1px;
 }
 
 .wrapper .icon .tooltip {
@@ -671,12 +660,12 @@ input:checked+.slide-container .nav label {
 .wrapper .snapchat:hover .tooltip::before {
     background: linear-gradient(45deg, #ffffff, #ffe100, #ffffff, #ffe100);
     color: #131212;
-    ;
+    
 }
 
 .wrapper .skype:hover .tooltip,
 .wrapper .skype:hover .tooltip::before {
-    background: linear-gradient(45deg, #00c3ff, #ffffff, #00c3ff, #ffffff, #00c3ff);
+                    background: linear-gradient(45deg, #00c3ff, #ffffff, #00c3ff, #ffffff, #00c3ff);
     color: #000000;
     ;
 }
@@ -711,15 +700,19 @@ input:checked+.slide-container .nav label {
 
 .btn-2 {
     height: 24px;
-    background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094,
-    #0000ff, #00ff00, #ffff00, #ff0000);
+    background: linear-gradient(45deg, #ffffff, #00ff00, #00ff00, #ffffff, #00ff00, #00ff00, #ffffff, #00ff00, #00ff00, #ffffff, #00ff00, #00ff00);
 }
 
 .btn-2:hover {
-    border: solid 1px #464545;
-    color: #00ff00;
+    border: solid 2px #fb7d07;
+    color: #ff8c00;
+    transform: translateX(10px);
+    transition: 0.5s;
 }
 
 .btn-2:active {
     margin-top: 2px;
 }
+
+
+
