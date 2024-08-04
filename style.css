@@ -71,10 +71,14 @@ h2 {
   padding-top: 40px;
 }
 
+.hu__hu__ { animation: hu__hu__ infinite 2s ease-in-out }
+@keyframes hu__hu__ {
+  50% { transform: translateY(30px) }
+}
+
 p {
   text-align: center;
   color: #e7e7e7;
-  font-size: 14px;
   font-weight: 300;
   line-height: 22px;
   padding: 15px;
@@ -91,10 +95,8 @@ h5 {
 }
 
 h3 {
-  text-align: center;
-  font-size: 30px;
-  font-weight: 40px;
   margin: 10px 0;
+  text-align: center;
   color: #fff;
 }
 
@@ -114,15 +116,7 @@ h3 {
   transition: 0.5s;
 }
 
-.course-col:hover {
-  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
-}
-
 @media (max-width: 700px) {
-  h5 {
-    font-size: small;
-  }
-
   .row {
     flex-direction: column;
   }
