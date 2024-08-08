@@ -5,6 +5,10 @@
   font-family: "ubuntu", sans-serif;
 }
 
+body {
+  background-color: #000000;
+}
+
 .header {
   min-height: 100vh;
   width: 100%;
@@ -40,9 +44,9 @@ nav img {
   }
 }
 
-/*-----course------*/
+/*-----Education------*/
 
-.course {
+.education {
   width: 80%;
   margin: auto;
   text-align: center;
@@ -71,9 +75,14 @@ h2 {
   padding-top: 40px;
 }
 
-.hu__hu__ { animation: hu__hu__ infinite 2s ease-in-out }
+.hu__hu__ {
+  animation: hu__hu__ infinite 2s ease-in-out
+}
+
 @keyframes hu__hu__ {
-  50% { transform: translateY(30px) }
+  50% {
+    transform: translateY(30px)
+  }
 }
 
 p {
@@ -155,6 +164,7 @@ h3 {
   justify-content: center;
   align-items: center;
   gap: 30px;
+  transform: scale(0.8);
 }
 
 .btn-1:hover {
@@ -228,13 +238,13 @@ h3 {
 
 .btn-1:disabled:before,
 .btn-1:disabled:after {
-  background: #dcdcdc;
+  background: #ffffff;
   animation: none;
 }
 
-/*----- campus -----*/
+/*----- Experience -----*/
 
-.campus {
+.experience {
   width: 80%;
   margin: auto;
   text-align: center;
@@ -282,9 +292,9 @@ h3 {
   opacity: 1;
 }
 
-/*----- facilities -----*/
+/*----- Skills -----*/
 
-.facilities {
+.skills {
   background-repeat: repeat;
   width: 90%;
   margin: auto;
