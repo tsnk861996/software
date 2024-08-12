@@ -59,11 +59,15 @@ nav img {
 }
 
 h1 {
+  background: linear-gradient(65deg,#00c3ff, #ff00ea, #00ff4c,#00c3ff, #e1ff00,#00c3ff, #aa00ff, #aa00ff, #00a2ff, #00ff4c, #00c3ff, #ff00ea, #00ff4c,#00c3ff, #e1ff00,#00c3ff, #aa00ff, #aa00ff, #00a2ff, #00ff4c);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin: 15px 0;
   text-align: center;
   font-size: 35px;
   padding: 15px;
-  color: #00c3ff;
+  font-family: "Oswald", sans-serif;
 }
 
 h2 {
@@ -73,6 +77,7 @@ h2 {
   font-size: 60px;
   line-height: 22px;
   padding-top: 40px;
+  font-family: "Oswald", sans-serif;
 }
 
 .hu__hu__ {
@@ -168,7 +173,7 @@ h3 {
 }
 
 .btn-1:hover {
-  color: #ffc400;
+  color: #00ff15;
 }
 
 .btn-1 span {
@@ -329,7 +334,7 @@ h3 {
 /*--hospitals--*/
 
 #p1 {
-  color: #ffb14b;
+  color: #ffd344;
 }
 
 #p2 {
