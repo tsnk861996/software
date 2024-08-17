@@ -24,6 +24,8 @@ nav {
   padding: 2% 6%;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
 }
 
 nav img {
@@ -73,9 +75,8 @@ h1 {
 h2 {
   margin: 10px 0 100px;
   text-align: center;
-  color: #fcfcfd;
+  color: #ffffff;
   font-size: 60px;
-  line-height: 22px;
   padding-top: 40px;
   font-family: "Oswald", sans-serif;
 }
@@ -279,7 +280,7 @@ h3 {
 }
 
 .layer:hover {
-  background: rgba(176, 189, 247, 0.7);
+  background: #fefeffe8;
 }
 
 .layer h3 {
@@ -308,7 +309,6 @@ h3 {
 
 .facilities-col {
   flex-basis: 30%;
-  border-radius: 10px;
   margin-bottom: 5%;
   text-align: left;
 }
