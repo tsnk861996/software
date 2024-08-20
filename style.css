@@ -601,12 +601,6 @@ input:checked+.slide-container .nav label {
   color: #000000;
 }
 
-.wrapper .snapchat:hover .tooltip,
-.wrapper .snapchat:hover .tooltip::before {
-  background: linear-gradient(45deg, #ffffff, #ffe100, #ffffff, #ffe100);
-  color: #131212;
-}
-
 .wrapper .skype:hover .tooltip,
 .wrapper .skype:hover .tooltip::before {
   background: linear-gradient(45deg,
