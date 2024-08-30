@@ -30,6 +30,7 @@ nav img {
   height: 110px;
   width: 100px;
   border-radius: 50%;
+  filter: drop-shadow(1px 1px 20px orange);
 }
 
 .text-box {
@@ -59,7 +60,7 @@ nav img {
 }
 
 h1 {
-  background: linear-gradient(65deg,#00c3ff, #ff00ea, #00ff4c,#00c3ff, #e1ff00,#00c3ff, #aa00ff, #aa00ff, #00a2ff, #00ff4c, #00c3ff, #ff00ea, #00ff4c,#00c3ff, #e1ff00,#00c3ff, #aa00ff, #aa00ff, #00a2ff, #00ff4c);
+  background: linear-gradient(65deg, #00c3ff, #ff00ea, #00ff4c, #00c3ff, #e1ff00, #00c3ff, #aa00ff, #aa00ff, #00a2ff, #00ff4c, #00c3ff, #ff00ea, #00ff4c, #00c3ff, #e1ff00, #00c3ff, #aa00ff, #aa00ff, #00a2ff, #00ff4c);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -140,7 +141,7 @@ h3 {
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1020px) {
   .row {
     flex-direction: column;
   }
@@ -307,7 +308,6 @@ h3 {
 
 .facilities-col {
   flex-basis: 30%;
-  margin-bottom: 5%;
   text-align: left;
 }
 
@@ -322,12 +322,55 @@ h3 {
   color: #030303;
 }
 
-.facilities-col p {
-  padding: 0;
-  text-align: left;
+/*--Family--*/
+
+.family {
+  width: 80%;
+  margin: auto;
+  text-align: center;
 }
 
-/*--Family--*/
+.mySlides {
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.mySlides img {
+  width: 100%;
+  display: block;
+}
+
+.layer1 {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+.layer1:hover {
+  background: #fefeffe8;
+}
+
+.layer1 h3 {
+  width: 100%;
+  color: #000000;
+  font-size: 16px;
+  bottom: 0;
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.layer1:hover h3 {
+  bottom: 35%;
+  opacity: 1;
+}
 
 /*--hospitals--*/
 
