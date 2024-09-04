@@ -2,18 +2,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "ubuntu", sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 body {
-  background-color: #000000;
+  background-color: #000;
 }
 
 .header {
   min-height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url(images/b.png);
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/b.png);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -37,21 +36,18 @@ nav img {
   text-align: center;
 }
 
-@media (max-width: 700px),
-(max-width: 1200px) {
+@media (max-width: 700px) {
   .text-box h2 {
     font-size: 29px;
     padding-top: 20%;
   }
 }
 
-/*-----Education------*/
-
 .education {
   width: 80%;
   margin: auto;
   text-align: center;
-  padding-top: 0px;
+  padding-top: 0;
 }
 
 .course-col img {
@@ -74,19 +70,19 @@ h1 {
 h2 {
   margin: 10px 0 100px;
   text-align: center;
-  color: #ffffff;
+  color: #fff;
   font-size: 60px;
   padding-top: 40px;
   font-family: "Oswald", sans-serif;
 }
 
 .hu__hu__ {
-  animation: hu__hu__ infinite 2s ease-in-out
+  animation: hu__hu__ infinite 2s ease-in-out;
 }
 
 @keyframes hu__hu__ {
   50% {
-    transform: translateY(30px)
+    transform: translateY(30px);
   }
 }
 
@@ -115,7 +111,7 @@ h3 {
 }
 
 .row {
-  margin-top: 0%;
+  margin-top: 0;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -135,7 +131,7 @@ h3 {
   .row {
     flex-direction: column;
   }
-
+  
   .course iframe {
     width: 280px;
     height: 180px;
@@ -149,8 +145,8 @@ h3 {
 }
 
 .btn-1 {
-  --BG_color: #ffffff;
-  --color: #000000;
+  --BG_color: #fff;
+  --color: #000;
   width: 140px;
   height: 40px;
   border: none;
@@ -196,17 +192,7 @@ h3 {
   left: -2px;
   top: -2px;
   border-radius: 10px;
-  background: linear-gradient(45deg,
-      #fb0094,
-      #0000ff,
-      #00ff00,
-      #ffff00,
-      #ff0000,
-      #fb0094,
-      #0000ff,
-      #00ff00,
-      #ffff00,
-      #ff0000);
+  background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
   background-size: 400%;
   width: calc(100% + 4px);
   height: calc(100% + 4px);
@@ -218,11 +204,9 @@ h3 {
   0% {
     background-position: 0 0;
   }
-
   50% {
     background-position: 400% 0;
   }
-
   100% {
     background-position: 0 0;
   }
@@ -232,7 +216,6 @@ h3 {
   filter: blur(50px);
 }
 
-/*** disabled style ***/
 .btn-1:disabled {
   pointer-events: none;
   opacity: 0.65;
@@ -244,11 +227,9 @@ h3 {
 
 .btn-1:disabled:before,
 .btn-1:disabled:after {
-  background: #ffffff;
+  background: #fff;
   animation: none;
 }
-
-/*----- Experience -----*/
 
 .experience {
   width: 80%;
@@ -285,7 +266,7 @@ h3 {
 
 .layer h3 {
   width: 100%;
-  color: #000000;
+  color: #000;
   font-size: 16px;
   bottom: 0;
   position: absolute;
@@ -297,8 +278,6 @@ h3 {
   bottom: 35%;
   opacity: 1;
 }
-
-/*----- Skills -----*/
 
 .skills {
   background-repeat: repeat;
@@ -313,6 +292,7 @@ h3 {
 }
 
 .facilities-col img {
+  cursor: not-allowed;
   width: 100%;
   border-radius: 10px;
 }
@@ -322,8 +302,6 @@ h3 {
   margin-bottom: 15px;
   color: #030303;
 }
-
-/*--Family--*/
 
 .family {
   width: 80%;
@@ -360,7 +338,7 @@ h3 {
 
 .layer1 h3 {
   width: 100%;
-  color: #000000;
+  color: #000;
   font-size: 16px;
   bottom: 0;
   position: absolute;
@@ -373,8 +351,6 @@ h3 {
   opacity: 1;
 }
 
-/*--hospitals--*/
-
 #p1 {
   color: #ffd344;
 }
@@ -386,8 +362,6 @@ h3 {
 #p3 {
   color: #09ff00;
 }
-
-/*--gallery--*/
 
 .carousel {
   margin-left: 30%;
@@ -422,7 +396,6 @@ ul.slides input {
 
 .slide-image img {
   width: 100%;
-  height: 100%;
 }
 
 .carousel-controls {
@@ -480,36 +453,36 @@ ul.slides input {
   height: 10px;
   border-radius: 50%;
   background-color: #fc04ef;
-  opacity: 0.3;
+  opacity: 0.2;
   margin: 3px;
 }
 
-input:checked+.slide-container .slide-image {
+input:checked + .slide-container .slide-image {
   opacity: 1;
   transform: scale(1);
   transition: opacity 1s ease-in-out;
 }
 
-input:checked+.slide-container .carousel-controls label {
+input:checked + .slide-container .carousel-controls label {
   display: block;
 }
 
-input#img-1:checked~.carousel-dots label#img-dot-1,
-input#img-2:checked~.carousel-dots label#img-dot-2,
-input#img-3:checked~.carousel-dots label#img-dot-3,
-input#img-4:checked~.carousel-dots label#img-dot-4,
-input#img-5:checked~.carousel-dots label#img-dot-5,
-input#img-6:checked~.carousel-dots label#img-dot-6,
-input#img-7:checked~.carousel-dots label#img-dot-7,
-input#img-8:checked~.carousel-dots label#img-dot-8,
-input#img-9:checked~.carousel-dots label#img-dot-9,
-input#img-10:checked~.carousel-dots label#img-dot-10,
-input#img-11:checked~.carousel-dots label#img-dot-11,
-input#img-12:checked~.carousel-dots label#img-dot-12 {
+input#img-1:checked ~ .carousel-dots label#img-dot-1,
+input#img-2:checked ~ .carousel-dots label#img-dot-2,
+input#img-3:checked ~ .carousel-dots label#img-dot-3,
+input#img-4:checked ~ .carousel-dots label#img-dot-4,
+input#img-5:checked ~ .carousel-dots label#img-dot-5,
+input#img-6:checked ~ .carousel-dots label#img-dot-6,
+input#img-7:checked ~ .carousel-dots label#img-dot-7,
+input#img-8:checked ~ .carousel-dots label#img-dot-8,
+input#img-9:checked ~ .carousel-dots label#img-dot-9,
+input#img-10:checked ~ .carousel-dots label#img-dot-10,
+input#img-11:checked ~ .carousel-dots label#img-dot-11,
+input#img-12:checked ~ .carousel-dots label#img-dot-12 {
   opacity: 1;
 }
 
-input:checked+.slide-container .nav label {
+input:checked + .slide-container .nav label {
   display: block;
 }
 
@@ -519,13 +492,11 @@ input:checked+.slide-container .nav label {
     width: 250px;
     margin-left: -35%;
   }
-
+  
   .carousel-controls {
     line-height: 250px;
   }
 }
-
-/*--icons--*/
 
 .wrapper {
   display: flex;
@@ -550,7 +521,7 @@ input:checked+.slide-container .nav label {
 
 .wrapper .icon .tooltip {
   position: absolute;
-  top: 0px;
+  top: 0;
   background: #fff;
   font-size: 15px;
   padding: 5px 15px;
@@ -580,80 +551,50 @@ input:checked+.slide-container .nav label {
 
 .wrapper .gmail:hover .tooltip,
 .wrapper .gmail:hover .tooltip::before {
-  background: linear-gradient(45deg,
-      #fb0000,
-      #ffffff,
-      #f80909,
-      #ffffff,
-      #fb0000);
-  color: #000000;
+  background: linear-gradient(45deg, #fb0000, #fff, #f80909, #fff, #fb0000);
+  color: #000;
 }
 
 .wrapper .whatsapp:hover .tooltip,
 .wrapper .whatsapp:hover .tooltip::before {
-  background: linear-gradient(45deg,
-      #00fb3b,
-      #ffffff,
-      #00fb3b,
-      #ffffff,
-      #00fb3b);
-  color: #000000;
+  background: linear-gradient(45deg, #00fb3b, #fff, #00fb3b, #fff, #00fb3b);
+  color: #000;
 }
 
 .wrapper .YouTube:hover .tooltip,
 .wrapper .YouTube:hover .tooltip::before {
-  background: linear-gradient(45deg,
-      #fb0000,
-      #ffffff,
-      #f80909,
-      #ffffff,
-      #fb0000);
-  color: #000000;
+  background: linear-gradient(45deg, #fb0000, #fff, #f80909, #fff, #fb0000);
+  color: #000;
 }
 
 .wrapper .instagram:hover .tooltip,
 .wrapper .instagram:hover .tooltip::before {
-  background: linear-gradient(45deg,
-      #fb0000,
-      #ffffff,
-      #ff00ff,
-      #ffa64d,
-      #001dfb);
-  color: #000000;
+  background: linear-gradient(45deg, #fb0000, #fff, #ff00ff, #ffa64d, #001dfb);
+  color: #000;
 }
 
 .wrapper .facebook:hover .tooltip,
 .wrapper .facebook:hover .tooltip::before {
   background: linear-gradient(45deg, #080690, #cecece, #080690);
-  color: #000000;
+  color: #000;
 }
 
 .wrapper .twitter:hover .tooltip,
 .wrapper .twitter:hover .tooltip::before {
-  background: linear-gradient(45deg,
-      #00c9fb,
-      #ffffff,
-      #00c9fb,
-      #ffffff,
-      #00c9fb);
-  color: #000000;
+  background: linear-gradient(45deg, #00c9fb, #fff, #00c9fb, #fff, #00c9fb);
+  color: #000;
 }
 
 .wrapper .linkedin:hover .tooltip,
 .wrapper .linkedin:hover .tooltip::before {
-  background: linear-gradient(45deg, #0037ff, #ffffff, #0037ff);
-  color: #000000;
+  background: linear-gradient(45deg, #0037ff, #fff, #0037ff);
+  color: #000;
 }
 
 .wrapper .skype:hover .tooltip,
 .wrapper .skype:hover .tooltip::before {
-  background: linear-gradient(45deg,
-      #00c3ff,
-      #ffffff,
-      #00c3ff,
-      #ffffff,
-      #00c3ff);
-  color: #000000;
+  background: linear-gradient(45deg, #00c3ff, #fff, #00c3ff);
+  color: #000;
 }
 
 @media (max-width: 700px) {
